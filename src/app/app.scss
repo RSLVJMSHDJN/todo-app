@@ -1,0 +1,256 @@
+// CONTAINER
+
+.container {
+  background-color: #18181C;
+  max-width: 1152px;
+  margin: auto;
+  padding: 40px 40px 80px;
+  border-radius: 24px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 80px;
+}
+
+// TITLE
+
+.main__title {
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  padding-left: 20px;
+}
+
+// SEARCH WRAPPER
+
+.search__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.search__inner-wrapper {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+.search {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #323235;
+  border-radius: 10px;
+  height: 48px;
+  padding-left: 48px;
+}
+
+.search__icon {
+  position: absolute;
+  width: 18px;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.search input {
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: white;
+}
+
+.search input::placeholder {
+  color: #636366;
+}
+
+.search__btn {
+  width: 48px;
+  height: 48px;
+  background-color: #764FF7;
+  border: none;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search__result {
+  text-align: center;
+}
+
+// LABELS
+
+.lebel__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 700px;
+    padding: 16px -44px;
+    width: 1072px;
+    height: 50;
+}
+
+.lebel__wrapper span {
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 5px;
+    color: #636366;
+    font-size: 16px;
+    padding: 2px 6px;
+    margin-left: 10px;
+}
+
+
+// LINE
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #323235;
+}
+
+// NO NOTES BLOCK
+
+.addNotes__wrapper {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.addNotes__img p {
+  width: 75px;
+  height: 75px;
+  border: 1px solid #636366;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 52px;
+  color: #636366;
+}
+
+.addNotes__desc {
+  margin-top: 12px;
+  font-size: 18px;
+  color: #636366;
+  line-height: 1.6;
+}
+
+// NOTES LIST
+
+.notes__list-wrapper {
+  width: 100%;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.notes__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+// SINGLE NOTE
+
+.note {
+  width: 100%;
+  background-color: #121215;
+  border-radius: 8px;
+
+  padding: 0 20px;
+  height: 64px;
+
+  display: grid;
+  grid-template-columns: 30px 1fr auto auto;  
+  align-items: center;
+  gap: 20px;
+
+  color: #FFFFFF;
+}
+
+// Checkbox
+
+.check {
+    // display: none;`
+    position: relative;
+}
+
+input[type="checkbox"]::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    margin-right: 5px;
+    background-color: #121215;
+    position: absolute;
+    left: 0px;
+    bottom: -4px;
+}
+
+
+input[type="checkbox"]:checked::before {
+    background-color: #121215;
+    content: '✓';
+    color: #323235;
+    border-color: #323235;
+    text-align: center;
+    line-height: 20px;
+}
+
+
+// Date
+
+.data__notes {
+  color: #636366;
+  font-size: 14px;
+}
+
+// Delete button
+
+.delete__btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+// Completed note
+
+.note__checked strong {
+  text-decoration: line-through;
+  opacity: .5;
+  color: #323235;
+}
+
+.note__checked .delete__btn,
+.note__checked .data__notes {
+  color: #323235;
+}
+
+// ADD BUTTON
+
+.add__wrapper {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+}
+
+.add__btn {
+  width: 48px;
+  height: 48px;
+  background-color: #764FF7;
+  color: white;
+  font-size: 32px;
+  border-radius: 50%;
+  border: none;
+}

@@ -1,0 +1,13 @@
+<main *ngIf="modal.isOpen" class="modal-container">
+    <div class="container">
+        <h1>Create Task</h1>
+        <div class="input__wrapper">
+            <img src="/assets/icons/pen.png" class="img__input" alt="">
+            <input type="text" [(ngModel)]="inputValue"  placeholder="Write the task name...">
+        </div>
+        <div class="btn__wrapper">
+            <button class="btn cancel" (click)="cancel()">Cancel</button>
+            <button class="btn accept" (click)="accept()">Accept</button>
+        </div>
+    </div>
+</main>
